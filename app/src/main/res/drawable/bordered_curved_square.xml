@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/bordered_curved_square.xml -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background shape -->
+    <item>
+        <shape android:shape="rectangle">
+            <!-- Set your background color or use an existing drawable -->
+            <solid android:color="#373E4E"/>
+            <!-- Set corner radius if curved -->
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+
+    <!-- Border -->
+    <item android:right="1dp" android:left="1dp" android:top="1dp" android:bottom="1dp">
+        <shape android:shape="rectangle">
+            <stroke android:color="@color/colorSectionName" android:width="2dp"/>
+            <!-- Set corner radius if curved -->
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+</layer-list>

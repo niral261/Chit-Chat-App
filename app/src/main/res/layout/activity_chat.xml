@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theme"
+    tools:context=".ChatActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yellow_curved_background"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="10dp"
+        android:id="@+id/toolbar">
+
+        <include
+            layout="@layout/profile_pic_view"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_toEndOf="@id/back_btn"
+            android:id="@+id/profile_pic_layout"/>
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/backBtn"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="@color/colorIcon"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/back_arrow" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/videoCall"
+            android:src="@drawable/round_video_call_24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="60dp"
+            android:contentDescription="TODO" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/round_audio_call"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/videoCall"
+            android:layout_marginEnd="50dp"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/other_username"
+            android:layout_width="116dp"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/videoCall"
+            android:layout_toEndOf="@id/profile_pic_layout"
+            android:text="Username"
+            android:paddingStart="3dp"
+            android:paddingEnd="0.5dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_above="@id/bottom_layout"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:id="@+id/bottom_layout">
+        
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/send_image_btn"
+            android:layout_centerVertical="true"
+            android:src="@drawable/imageSenderPic"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            />
+
+        <EditText
+            android:id="@+id/chat_message_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="-12dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toStartOf="@+id/messege_send_btn"
+            android:layout_toEndOf="@+id/send_image_btn"
+            android:autofillHints=""
+            android:background="@drawable/curved_square"
+            android:elevation="4dp"
+            android:hint="write_message_here"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorIcon" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/round_send_24"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/messege_send_btn"
+            app:tint="@color/colorSectionName"
+            android:contentDescription="TODO" />
+    </RelativeLayout>
+</RelativeLayout>
