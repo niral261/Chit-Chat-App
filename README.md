@@ -108,7 +108,7 @@ This is a mobile chat application developed for Android using XML for frontend l
 
 
 # Screenshots
-![image](https://github.com/niral261/Chit-Chat-App/assets/102373223/98f351cf-6a68-4d63-9193-faf24118b83f) ![image](https://github.com/niral261/Chit-Chat-App/assets/102373223/db4fc0f5-177d-4de3-8865-7ce1b4f94d4e) ![image](https://github.com/niral261/Chit-Chat-App/assets/102373223/47cb4912-7e30-4b76-86d6-dceb4bdb7029)
+![image](https://github.com/niral261/Chit-Chat-App/assets/102373223/98f351cf-6a68-4d63-9193-faf24118b83f)     ![image](https://github.com/niral261/Chit-Chat-App/assets/102373223/db4fc0f5-177d-4de3-8865-7ce1b4f94d4e)     ![image](https://github.com/niral261/Chit-Chat-App/assets/102373223/47cb4912-7e30-4b76-86d6-dceb4bdb7029)
 
 
 # Contributing
