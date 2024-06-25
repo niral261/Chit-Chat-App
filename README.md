@@ -9,19 +9,19 @@ This is a mobile chat application developed for Android using XML for frontend l
 
 •	Mobile Number Authentication:
 
-    o	Authenticate using a mobile number.
-    
-    o	Receive OTP (One-Time Password) for verification.
-    
-    o	Set username after successful verification.
+o	Authenticate using a mobile number.
+
+o	Receive OTP (One-Time Password) for verification.
+
+o	Set username after successful verification.
 
 •	Real-time Messaging:
 
-    o	Send text messages instantly to other users.
-    
-    o	View real-time updates for incoming messages.
-    
-    o	Display sender information and timestamps.
+o	Send text messages instantly to other users.
+
+o	View real-time updates for incoming messages.
+
+o	Display sender information and timestamps.
 
 •	Profile Management:
 
